@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cyberpunk 2077</title>
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="section1">
+    <img id="devant" src="images/devant.png">
+  </div>
+  <div class="section">
+    <img id="derriere" src="images/font.jpg">
+  </div>
+  <div class="section3">
+    <img id="logo" src="images/logo.png">
+  </div>
+  <script>
+    let logo = document.getElementById('logo')
+    let devant = document.getElementById('devant')
+    window.addEventListener('scroll', function(){
+      let value= window.scrollY;
+      logo.style.left = value * 1.05 +'px';
+      logo.style.top = value * 0.5 +'px';
+      derriere.style.top = value * 0.8 + 'px';
+    })
+  </script>
+  
+    
+
+</body>
+</html>
